@@ -982,6 +982,8 @@ h1 {
 }
 
 .modal-actions {
+  max-height: 50vh;
+  overflow-y: auto;
   margin-top: 20px;
   position: relative;
   min-height: 100px;
@@ -1049,6 +1051,8 @@ h1 {
   color: #333;
   margin: 10px 0;
   white-space: pre-wrap;
+  word-break: break-all;
+  overflow-wrap: break-word;
 }
 .actions-text a {
   color: #8b0000;
