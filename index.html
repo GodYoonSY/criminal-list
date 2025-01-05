@@ -1065,9 +1065,9 @@
           }
 
           const format = formats[0];
-          let imagePath = `images/${person.group}/${person.name}.${format}`;
+          let imagePath = `images/${person.group}/${person.name}.${format}?nocache=${new Date().getTime()}`;
           if (person.group === '기타·극우미디어' && person.row === 5) {
-            imagePath = `images/${person.group}/5/${person.name}.${format}`;
+            imagePath = `images/${person.group}/5/${person.name}.${format}?nocache=${new Date().getTime()}`;
           }
 
           img.onerror = () => {
@@ -1838,7 +1838,7 @@
         const modalName = document.getElementById('modalName');
         const modalRole1 = document.getElementById('modalRole1');
         const modalRole2 = document.getElementById('modalRole2');
-        ㄴ;
+
         const modalActions = document.getElementById('modalActions');
         const modalActionsView = document.getElementById('modalActionsView');
         const loadingOverlay = document.querySelector('.loading-overlay');
